@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qiwi Кошелек</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 360px;
+            margin: 0 auto;
+            padding: 15px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f8a700;
+        }
+        .header .profile {
+            font-size: 24px;
+            color: #f8a700;
+        }
+        .balance {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #333;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #f8a700;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #f08c00;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .transaction {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .transaction p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .transaction .amount {
+            font-weight: bold;
+            color: #f8a700;
+        }
+        .add-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f0f0f0;
+            border-radius: 10px;
+            padding: 15px;
+            cursor: pointer;
+            border: 1px solid #e0e0e0;
+        }
+        .add-card span {
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">Qiwi</div>
+            <div class="profile">👤</div>
+        </div>
+        <div class="balance">
+            1 000 000 ₽
+        </div>
+        <a href="#" class="button">Пополнить</a>
+        <a href="#" class="button">Перевести</a>
+        <a href="#" class="button">Оплатить</a>
+
+        <div class="section">
+            <h2>Последние транзакции</h2>
+            <div class="transaction">
+                <p>Перевод в магазин</p>
+                <p class="amount">-1 200 ₽</p>
+            </div>
+            <div class="transaction">
+                <p>Пополнение счета</p>
+                <p class="amount">+5 000 ₽</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="add-card">
+                <span>Добавить карту</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
